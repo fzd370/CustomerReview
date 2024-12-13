@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Review Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Review Form</h1>
+        
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="rating">Rating (1-10):</label>
+                <input type="text" id="rating" name="rating" placeholder="Enter rating (1-10)" required>
+                <span id="ratingError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="productId">Product ID:</label>
+                <select id="productId" required>
+                    <option value="">Select Product ID</option>
+                    <option value="P100">P100</option>
+                    <option value="P101">P101</option>
+                    <option value="P102">P102</option>
+                    <option value="P103">P103</option>
+                    <option value="P104">P104</option>
+                    <option value="P105">P105</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" rows="4" required></textarea>
+            </div>
+
+            <div id="npsCategory" class="nps-category"></div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
